@@ -1,0 +1,13 @@
+{
+    "[cpp]": {
+        "editor.rulers": [80,100]
+    },
+    "files.associations": {
+        "*.json": "jsonc",
+        "cstdlib": "cpp",
+        "cerrno": "cpp",
+        "cstring": "cpp",
+        "ctime": "cpp",
+        "cstdio": "cpp"
+    }
+}
