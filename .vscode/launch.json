@@ -44,6 +44,33 @@
             ]
         },
         {
+            "name": "run ch-15/web_server",
+            "type": "cppdbg",
+            "request": "launch",
+            "preLaunchTask": "build ch-15/web_server",
+            "program": "${fileDirname}/bin/web_server",
+            "args": [
+                "172.28.119.110", "12345"
+            ],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set Disassembly Flavor to Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ]
+        },
+        {
             "name": "debug program with args: ip & port",
             "type": "cppdbg",
             "request": "launch",

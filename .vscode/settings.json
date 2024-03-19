@@ -8,6 +8,13 @@
         "cerrno": "cpp",
         "cstring": "cpp",
         "ctime": "cpp",
-        "cstdio": "cpp"
+        "cstdio": "cpp",
+        "list": "cpp",
+        "exception": "cpp",
+        "*.tcc": "cpp",
+        "compare": "cpp",
+        "memory_resource": "cpp",
+        "type_traits": "cpp",
+        "string": "cpp"
     }
 }

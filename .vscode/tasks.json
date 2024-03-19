@@ -10,9 +10,28 @@
 				"-g",
 				"${file}",
 				"-std=c++11",
-				// "-levent",
 				"-o",
 				"${fileDirname}/bin/${fileBasenameNoExtension}"
+			],
+			"options": {
+				"cwd": "${fileDirname}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build",
+			"detail": "compiler: /usr/bin/g++"
+		},
+		{
+			"type": "cppbuild",
+			"label": "build ch-15/web_server",
+			"command": "/usr/bin/g++",
+			"args": [
+				"-fdiagnostics-color=always",
+				"-g", "-DDEBUG",
+				"web_server.cpp", "http_conn.cpp",
+				"-o",
+				"${fileDirname}/bin/web_server"
 			],
 			"options": {
 				"cwd": "${fileDirname}"
